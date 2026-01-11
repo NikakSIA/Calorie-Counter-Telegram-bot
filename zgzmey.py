@@ -63,7 +63,7 @@ eaten = Food("съеденное", 0, 0, 0, 0)
 with open("kbju_fans.json", encoding="UTF-8") as file_in:
     json_data = json.load(file_in)
 
-bot = telebot.TeleBot('8060859076:AAGtHcubYWscokk1nVY0Q1QcssyOYGufzfE')
+bot = telebot.TeleBot('Вставьте свой код для телеграм бота от BotFather')
 
 #Ну старт, первое сообщение и его логика
 @bot.message_handler(commands = ['start'])
@@ -271,4 +271,5 @@ def handle_text(message):
             json.dump(json_data, file_out, ensure_ascii=False, indent=4)
 
 #((((3!)^(3!))!)^(3!))! This is very important
+
 bot.polling(none_stop = True)
